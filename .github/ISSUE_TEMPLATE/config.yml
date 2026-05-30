@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/asm198x/docs
+    about: The ISA spec format and per-machine dialect references.
+  - name: Question or discussion
+    url: https://github.com/asm198x/asm198x/discussions
+    about: For open-ended questions rather than bug reports.

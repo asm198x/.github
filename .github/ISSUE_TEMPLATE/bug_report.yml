@@ -1,0 +1,55 @@
+name: Bug report
+description: Wrong output, a crash, or other incorrect behaviour.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. For an assembler, the most useful bugs are
+        "it emitted the wrong bytes" — so please include the source and the
+        bytes you got versus the bytes you expected.
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: Output of `asm198x --version`, or the git commit you built.
+    validations:
+      required: false
+  - type: dropdown
+    id: cpu
+    attributes:
+      label: CPU / dialect
+      options:
+        - "6502"
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Input source
+      description: The smallest assembly source that shows the problem.
+      render: asm
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: asm198x program.s -o program.bin
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected bytes
+      description: What you expected, and what says so (a datasheet, another assembler).
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output
+      description: What Asm198x produced (a hex dump is ideal), or the error message.
+    validations:
+      required: true

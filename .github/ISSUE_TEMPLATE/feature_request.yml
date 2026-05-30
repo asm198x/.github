@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an instruction, addressing mode, directive, dialect, or CPU.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's missing
+      description: What can't you do today? If it's a dialect gap, which assembler accepts it?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - 6502 dialect
+        - A new CPU
+        - ISA spec / encoding
+        - CLI / output formats
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+      description: What should happen instead? Examples of the syntax or output help.
+    validations:
+      required: false
