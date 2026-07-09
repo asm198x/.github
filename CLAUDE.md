@@ -1,0 +1,30 @@
+# Asm198x — org container
+
+This folder is the local mirror of the **`asm198x` GitHub org**. It is a
+*container*, not a git repo: each subfolder is its own independent repo with its
+own history and remote (the same pattern as `Code198x/`). The umbrella `198x/`
+repo gitignores this folder; commit inside the specific subfolder, never here.
+
+Asm198x is the third sibling of the 198x family — a family of modern,
+single-binary assemblers and disassemblers for retro CPUs — peer to Code198x
+(curriculum) and Emu198x (emulator). See the umbrella context at
+[`../CLAUDE.md`](../CLAUDE.md) and the binding architecture decision at
+[`../decisions/asm198x-and-shared-isa-spec.md`](../decisions/asm198x-and-shared-isa-spec.md).
+
+## Repos in this org
+
+| Folder | GitHub repo | Role |
+|--------|-------------|------|
+| [`asm198x/`](asm198x/) | `asm198x/asm198x` | **Flagship workspace.** The Rust workspace: the `isa` spec crate + the `asm198x` engine/CLI. Start here for assembler work; it has its own [`CLAUDE.md`](asm198x/CLAUDE.md) and `decisions/`. |
+| [`.github/`](.github/) | `asm198x/.github` | Org profile (`profile/README.md`) and shared community-health files. |
+| [`docs/`](docs/) | `asm198x/docs` | Documentation — the spec format, dialect references, the docs site. |
+
+## Working here
+
+- **Commit in the right subfolder.** Each repo is independent; `git status` from
+  the container shows nothing (it isn't a repo).
+- **Cross-project decisions** live in the umbrella [`../decisions/`](../decisions/);
+  Asm198x-only decisions live in [`asm198x/decisions/`](asm198x/decisions/).
+- **Hardware facts** come from the umbrella primary library
+  [`../reference/`](../reference/) and [`../syntheses/`](../syntheses/), per
+  [`../decisions/shared-hardware-reference-canon.md`](../decisions/shared-hardware-reference-canon.md).
