@@ -1,9 +1,6 @@
 # Asm198x — org container
 
-This folder is the local mirror of the **`asm198x` GitHub org**. It is a
-*container*, not a git repo: each subfolder is its own independent repo with its
-own history and remote (the same pattern as `Code198x/`). The umbrella `198x/`
-repo gitignores this folder; commit inside the specific subfolder, never here.
+This folder is the org container for the **`asm198x` GitHub organisation**. It is not a Git repo; each child folder is an independent repo with its own remote. Commit inside the repo that owns the file.
 
 Asm198x is the third sibling of the 198x family — a family of modern,
 single-binary assemblers and disassemblers for retro CPUs — peer to Code198x
