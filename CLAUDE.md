@@ -14,7 +14,8 @@ single-binary assemblers and disassemblers for retro CPUs — peer to Code198x
 |--------|-------------|------|
 | [`asm198x/`](asm198x/) | `asm198x/asm198x` | **Flagship workspace.** The Rust workspace: the `isa` spec crate + the `asm198x` engine/CLI. Start here for assembler work; it has its own [`CLAUDE.md`](asm198x/CLAUDE.md) and `decisions/`. |
 | [`.github/`](.github/) | `asm198x/.github` | Org profile (`profile/README.md`) and shared community-health files. |
-| [`docs/`](docs/) | `asm198x/docs` | Documentation — the spec format, dialect references, the docs site. |
+| [`docs/`](docs/) | `asm198x/docs` | Documentation — the spec format, dialect references. |
+| [`asm198x.github.io/`](asm198x.github.io/) | `asm198x/asm198x.github.io` | Public site (Astro, GitHub Pages via Actions). House style mirrors the family sites. |
 
 ## Working here
 
